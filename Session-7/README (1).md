@@ -9,43 +9,43 @@ The model architecture is a Convolutional Neural Network designed for image clas
 - **Conv2d-1:** Input: 3 channels, Output: 16 channels, Kernel Size: 3x3, Stride: 1, Padding: 1.
 - **BatchNorm2d-2:** Normalizes the output of the first convolutional layer.
 - **ReLU-3:** Applies the ReLU activation function.
-- **Dropout-4:** Applies dropout with a rate of 0.0 to the output.
+- **Dropout-4:** Applies dropout with a rate of 0.05 to the output.
 - **Conv2d-5:** Input: 16 channels, Output: 32 channels, Kernel Size: 3x3, Stride: 2 (Downsampling), Padding: 1.
 - **BatchNorm2d-6:** Normalizes the output.
 - **ReLU-7:** Applies ReLU activation.
-- **Dropout-8:** Applies dropout with a rate of 0.0.
+- **Dropout-8:** Applies dropout with a rate of 0.05.
 - **Conv2d-9:** Input: 32 channels, Output: 64 channels, Kernel Size: 3x3, Stride: 1, Padding: 1.
 - **BatchNorm2d-10:** Normalizes the output.
 - **ReLU-11:** Applies ReLU activation.
-- **Dropout-12:** Applies dropout with a rate of 0.0.
+- **Dropout-12:** Applies dropout with a rate of 0.05.
 - **Conv2d-13:** Input: 64 channels, Output: 64 channels, Kernel Size: 3x3, Stride: 1, Padding: 1.
 - **BatchNorm2d-14:** Normalizes the output.
 - **ReLU-15:** Applies ReLU activation.
-- **Dropout-16:** Applies dropout with a rate of 0.0.
+- **Dropout-16:** Applies dropout with a rate of 0.05.
 - **Conv2d-17:** Input: 64 channels, Output: 64 channels, Kernel Size: 3x3, Stride: 1, Padding: 1.
 - **BatchNorm2d-18:** Normalizes the output.
 - **ReLU-19:** Applies ReLU activation.
 - **Conv2d-20:** Input: 64 channels, Output: 96 channels, Kernel Size: 3x3, Stride: 2 (Downsampling), Padding: 1.
 - **BatchNorm2d-21:** Normalizes the output.
 - **ReLU-22:** Applies ReLU activation.
-- **Dropout-23:** Applies dropout with a rate of 0.0.
+- **Dropout-23:** Applies dropout with a rate of 0.05.
 - **Conv2d-24:** Input: 96 channels, Output: 96 channels, Kernel Size: 3x3, Stride: 1, Padding: 0. This appears to be a depthwise separable convolution operation combined with the next pointwise convolution.
 - **Conv2d-25:** Input: 96 channels, Output: 128 channels, Kernel Size: 1x1, Stride: 1, Padding: 0. This is likely the pointwise part of a depthwise separable convolution.
 - **BatchNorm2d-26:** Normalizes the output.
 - **ReLU-27:** Applies ReLU activation.
-- **Dropout-28:** Applies dropout with a rate of 0.0.
+- **Dropout-28:** Applies dropout with a rate of 0.05.
 - **DWSeparableConv-29:** Depthwise Separable Convolution (details from Conv2d-24 and Conv2d-25).
 - **Conv2d-30:** Input: 128 channels, Output: 128 channels, Kernel Size: 3x3, Stride: 1, Padding: 0. Likely depthwise part of another depthwise separable convolution.
 - **Conv2d-31:** Input: 128 channels, Output: 128 channels, Kernel Size: 1x1, Stride: 1, Padding: 0. Likely pointwise part of another depthwise separable convolution.
 - **BatchNorm2d-32:** Normalizes the output.
 - **ReLU-33:** Applies ReLU activation.
-- **Dropout-34:** Applies dropout with a rate of 0.0.
+- **Dropout-34:** Applies dropout with a rate of 0.05.
 - **DWSeparableConv-35:** Depthwise Separable Convolution (details from Conv2d-30 and Conv2d-31).
 - **Conv2d-36:** Input: 128 channels, Output: 128 channels, Kernel Size: 3x3, Stride: 2 (Downsampling), Padding: 0. Likely depthwise part of a depthwise separable convolution with downsampling.
 - **Conv2d-37:** Input: 128 channels, Output: 128 channels, Kernel Size: 1x1, Stride: 1, Padding: 0. Likely pointwise part of a depthwise separable convolution with downsampling.
 - **BatchNorm2d-38:** Normalizes the output.
 - **ReLU-39:** Applies ReLU activation.
-- **Dropout-40:** Applies dropout with a rate of 0.0.
+- **Dropout-40:** Applies dropout with a rate of 0.05.
 - **DWSeparableConv-41:** Depthwise Separable Convolution (details from Conv2d-36 and Conv2d-37).
 - **Conv2d-42:** Input: 128 channels, Output: 128 channels, Kernel Size: 3x3, Stride: 1, Padding: 0. Likely depthwise part of a final depthwise separable convolution.
 - **BatchNorm2d-43:** Normalizes the output.
