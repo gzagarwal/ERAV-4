@@ -1,0 +1,4 @@
+{
+  "tokenizer_class": "SentencePieceTokenizer",
+  "model_max_length": 512
+}
