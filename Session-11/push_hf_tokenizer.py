@@ -1,5 +1,7 @@
 import os
 from huggingface_hub import HfApi
+import os
+from huggingface_hub import HfApi
 
 
 def main():
@@ -40,3 +42,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+            print("Upload complete. Visit https://huggingface.co/" + repo_id)

@@ -1,0 +1,12 @@
+---
+title: "Hindi BPE Tokenizer"
+emoji: "🤖"
+colorFrom: "indigo"
+colorTo: "blue"
+sdk: "gradio"
+sdk_version: "3.34.1"
+app_file: app.py
+pinned: false
+---
+
+# Space config: replace values above if you prefer different title/emoji/sdk.

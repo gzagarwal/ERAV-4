@@ -1,3 +1,5 @@
-torch
+gradio>=3.0
 sentencepiece
-#nicodedata
+huggingface-hub
+
+# Optional: add heavy frameworks only if needed (e.g. torch)
